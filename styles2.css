@@ -107,7 +107,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20%; /* Adjusting the top margin */
+  margin-top: 0%; /* Adjusting the top margin */
 }
 
 .image-container img {
@@ -176,6 +176,6 @@ body {
   }
 
   #gradient {
-    height: 400px; /* Reduce gradient container height on mobile */
+    height: 300px; /* Reduce gradient container height on mobile */
   }
 }
