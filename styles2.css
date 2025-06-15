@@ -22,7 +22,7 @@ body {
   background-size: 400% 400%;
   height: 500px; /* Reduced height */
   width: 100%;
-  margin-top: 50px; /* Reduce extra space above */
+  margin-top: 100px; /* Reduce extra space above */
   animation: Animation 7s ease infinite;
 }
 
