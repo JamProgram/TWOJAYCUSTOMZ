@@ -120,19 +120,19 @@ body {
 }
 
 .image-container .slide-in {
-  animation-delay: 0.5s;
+  animation-delay: 1.0s;
 }
 
 .image-container .slide-in2 {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 .image-container .slide-in3 {
-  animation-delay: 3.5s;
+  animation-delay: 4.0s;
 }
 
 .image-container .slide-in4 {
-  animation-delay: 5s;
+  animation-delay: 5.5s;
 }
 
 @keyframes slide-in {
