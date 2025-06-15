@@ -1,4 +1,3 @@
-
 /* Reset all margins and paddings */
 * {
   margin: 0;
@@ -85,8 +84,15 @@ body {
 }
 
 /* Image slide-in animations */
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .image-container img {
-  max-width: 100%;
+  width: 300px;  /* Limiting image width on larger screens */
   height: auto;
   opacity: 0;
   transform: translateX(-100%);
@@ -139,7 +145,7 @@ body {
 
   /* Make images take up the full width on small screens */
   .image-container img {
-    width: 100%;
+    width: 100%; /* Allow images to take up full width on smaller screens */
     transform: translateX(0);
   }
 }
