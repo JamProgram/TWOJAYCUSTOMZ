@@ -47,14 +47,27 @@ body {
 }
 
 .neon-text {
-  font-size: 3rem; /* Reduced size for desktop */
-  margin-top: 10%;
+  position: fixed;
+  top: 50%; /* Adjusted to push text closer to the bottom */
+  left: 50%;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+  transform: translate(-50%, -50%);
 }
 
 .neon-text2 {
-  font-size: 1.5rem; /* Reduced size for desktop */
-  margin-top: 5%;
+  position: fixed;
+  top: 65%; /* Adjusted for second text to be lower */
+  left: 50%;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+  transform: translate(-50%, -50%);
 }
+
 
 /* Top navigation bar */
 .topnav {
