@@ -1,3 +1,4 @@
+
 /* Reset default margins and paddings */
 * {
   margin: 0;
@@ -12,6 +13,11 @@ body {
   font-family: 'Stencil Std', fantasy;
   color: white;
   position: relative;
+  background-image: url('icon.jpg');
+  background-size: cover; /* Ensures the image covers the screen */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background fixed during scroll */
 }
 
 /* Dark overlay to improve readability */
@@ -43,6 +49,9 @@ body {
   font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 10px #000;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  padding: 0 10px; /* Adds padding for smaller screens */
 }
 
 /* ENTER button styling */
@@ -56,8 +65,34 @@ body {
   cursor: pointer;
   transition: background 0.3s;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 .button-86:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Media queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  .centered {
+    font-size: 2rem; /* Smaller font size on mobile */
+    margin-bottom: 15px;
+  }
+
+  .button-86 {
+    padding: 10px 20px;
+    font-size: 1rem; /* Slightly smaller button text */
+  }
+}
+
+@media (max-width: 480px) {
+  .centered {
+    font-size: 1.5rem; /* Even smaller text on smaller devices */
+    margin-bottom: 10px;
+  }
+
+  .button-86 {
+    padding: 8px 16px;
+    font-size: 0.9rem; /* Further reduce button size */
+  }
 }
