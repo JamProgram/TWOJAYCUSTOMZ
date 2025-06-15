@@ -1,21 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TWOJAYCUSTOMZ</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Background overlay to darken the image for readability -->
-  <div class="overlay"></div>
+/* Set up the layout for the body and content */
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Stencil Std', fantasy;
+  color: white;
+  position: relative;
+}
 
-  <!-- Main content -->
-  <div class="content">
-    <h1 class="centered">TWOJAYCUSTOMZ</h1>
-    <a href="mainpage.html" class="button-86">ENTER</a>
-  </div>
+/* Dark overlay to improve readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
 
-</body>
-</html>
+/* Main content styling */
+.content {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Title text */
+.centered {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* ENTER button styling */
+.button-86 {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.button-86:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
