@@ -160,7 +160,7 @@ body {
   /* Adjust navigation bar for smaller screens */
   .topnav {
     flex-direction: column; /* Stack the links vertically */
-    padding: 10px 0;
+    padding: 7px 0;
   }
 
   .topnav a {
