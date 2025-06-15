@@ -1,35 +1,32 @@
-
 /* pic of hennessey */
 img {
   position: fixed;
   bottom: 0;
   left: 0;
-  max-width: 1000px;
-  max-height: 691px;
-  
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Make sure the image scales properly */
 }
 
 /* SLide in picture of henny&nightwing on main pages */
 .slide-in, .slide-in2, .slide-in3, .slide-in4 {
-  width: 540px; 
+  width: 100%; 
   opacity: 0;
-  transform: translateX(-100%); /* Start off-screen to the left */
+  transform: translateX(-100%);
   animation: slide-in 1s ease-out forwards;
 }
 
+.slide-in2 {
+  animation-delay: 2.0s;
+}
 
-  .slide-in2 {
-    animation-delay: 2.0s; /* Second image pops in after a slight delay */
-  }
+.slide-in3 {
+  animation-delay: 4.0s;
+}
 
-  .slide-in3 {
-    animation-delay: 4.0s; /* Second image pops in after a slight delay */
-  }
-
-   .slide-in4 {
-    animation-delay: 6.0s; /* Second image pops in after a slight delay */
-  }
-
+.slide-in4 {
+  animation-delay: 6.0s;
+}
 
 @keyframes slide-in {
   0% {
@@ -48,19 +45,19 @@ img {
   top: 0;
   left: 0;
   background-color: #333;
-  width:1600px;
+  width: 100%;
   opacity: 0.5;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 160px;
+  padding: 14px;
   text-decoration: none;
   font-size: 17px;
+  display: inline-block;
 }
 
 /* Change the color of links on hover */
@@ -78,8 +75,9 @@ img {
 /* Add a color NEON WORDS */
 .neon-text {
   position: fixed;
-  top:18%;
-  left: 48%;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 4rem;
   color: white;
   text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
@@ -88,8 +86,9 @@ img {
 
 .neon-text2 {
   position: fixed;
-  top:30%;
-  left: 62%;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2rem;
   color: white;
   text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
@@ -98,60 +97,85 @@ img {
 
 @keyframes glow {
   0% {
-      text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange, 0 0 40px orange, 0 0 80px orange;
+    text-shadow: 0 0 5px orange, 0 0 10px orange, 0 0 20px orange, 0 0 40px orange, 0 0 80px orange;
   }
   100% {
-      text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
   }
 }
 
-
-
 /* mainpage background color */
-     #gradient
-     {
-         height:800px;
-         width:1600px;
-         border:1px solid black;
-         font-size:30px;
-         background: linear-gradient(130deg, orange , brown, navy);
-         background-size: 400% 400%;
-     
-         -webkit-animation: Animation 7s ease infinite;
-         -moz-animation: Animation 7s ease infinite;
-         animation: Animation 7s ease infinite;
-     }
-     
-     @-webkit-keyframes Animation {
-         0%{background-position:10% 0%}
-         50%{background-position:91% 100%}
-         100%{background-position:10% 0%}
-     }
-     @-moz-keyframes Animation {
-         0%{background-position:10% 0%}
-         50%{background-position:91% 100%}
-         100%{background-position:10% 0%}
-     }
-     @keyframes Animation { 
-         0%{background-position:10% 0%}
-         50%{background-position:91% 100%}
-         100%{background-position:10% 0%}
-     }
-      
+#gradient {
+  height: 800px;
+  width: 100%;
+  font-size: 30px;
+  background: linear-gradient(130deg, orange, brown, navy);
+  background-size: 400% 400%;
+  -webkit-animation: Animation 7s ease infinite;
+  -moz-animation: Animation 7s ease infinite;
+  animation: Animation 7s ease infinite;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+@-webkit-keyframes Animation {
+  0% { background-position: 10% 0% }
+  50% { background-position: 91% 100% }
+  100% { background-position: 10% 0% }
+}
+@-moz-keyframes Animation {
+  0% { background-position: 10% 0% }
+  50% { background-position: 91% 100% }
+  100% { background-position: 10% 0% }
+}
+@keyframes Animation {
+  0% { background-position: 10% 0% }
+  50% { background-position: 91% 100% }
+  100% { background-position: 10% 0% }
+}
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
-    }
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
 
-    
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust Neon text for smaller screens */
+  .neon-text {
+    font-size: 3rem;
+    top: 15%;
+  }
+  .neon-text2 {
+    font-size: 1.5rem;
+    top: 25%;
+  }
+
+  /* Adjust position and size of slide-in images */
+  .slide-in, .slide-in2, .slide-in3, .slide-in4 {
+    width: 90%; 
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s ease-out forwards;
+  }
+
+  /* Adjust navbar for mobile */
+  .topnav {
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  .topnav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
