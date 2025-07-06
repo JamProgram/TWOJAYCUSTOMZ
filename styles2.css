@@ -48,7 +48,7 @@ body {
 
 .neon-text {
   position: fixed;
-  top: 50%; /* Adjusted to push text closer to the bottom */
+  top: 30%; /* Adjusted to push text closer to the bottom */
   left: 50%;
   font-size: 4rem;
   color: white;
@@ -59,7 +59,7 @@ body {
 
 .neon-text2 {
   position: fixed;
-  top: 65%; /* Adjusted for second text to be lower */
+  top: 45%; /* Adjusted for second text to be lower */
   left: 50%;
   font-size: 2rem;
   color: white;
