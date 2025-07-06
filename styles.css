@@ -13,7 +13,7 @@ body {
   color: white;
   position: relative;
   background-image: url('icon.jpg');
-  background-size: cover; /* Ensures the image covers the screen */
+ /*  background-size: cover; Ensures the image covers the screen */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Keeps the background fixed during scroll */
