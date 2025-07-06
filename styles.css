@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  font-family: 'Stencil Std', fantasy;
+  font-family: 'Stencil Std', roboto;
   color: white;
   position: relative;
   background-image: url('icon.jpg');
@@ -74,7 +74,7 @@ body {
 /* Media queries for better mobile responsiveness */
 @media (max-width: 768px) {
   .centered {
-    font-size: 8vw; /* Adjusted size for tablets */
+    font-size: 6vw; /* Adjusted size for tablets */
     margin-bottom: 15px;
   }
 
