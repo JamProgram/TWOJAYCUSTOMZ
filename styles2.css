@@ -8,7 +8,7 @@
 
 /* Body styling */
 body {
-  font-family: 'Stencil Std', fantasy;
+  font-family: 'Stencil Std', roboto;
   background-color: black;
   color: white;
   overflow-x: hidden; /* Prevent horizontal scrolling */
