@@ -2,13 +2,13 @@
   max-width: 800px;
   margin: 60px auto;
   padding: 30px;
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   color: #333;
 }
 body{
-color: black;
+background-color: black;
 }
 
 .booking-form h2 {
